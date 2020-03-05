@@ -1,43 +1,172 @@
-/* .big-banner{
-    background-image:url('../img/background02.jpg') ;
-    /* opacity: 0.7; */
-    filter: brightness(40%);
+
+body {
+	color:#969696;
+	font-size:16px;
+	overflow-x:hidden;
+	font-family: 'Cabin', sans-serif;
 }
- */
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+	color:#151515;
+	font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+	font-size:54px;
+}
+
+h2 {
+	font-size:36px;
+}
+
+h3 {
+	font-size:24px;
+}
+
+h4 {
+	font-size:16px;
+}
+
+a {
+	color:#151515;
+	-webkit-transition:0.2s color;
+	transition:0.2s color;
+}
 
 
 
+.big-banner{
+    background-image:url('../img/background02.jpg') ;
+    font-family: 'Dancing Script', cursive;
+}
 
-/* .jumbotron {
-    position:relative;
-    overflow:hidden;
-/* height: 750px; */
-  /* }
-  
-  .jumbotron .container {
-    position:relative;
-    z-index:2;
-    
-    background:rgba(0,0,0,0.2);
-    padding:2rem;
-    border:1px solid rgba(0,0,0,0.1);
-    border-radius:3px;
+
+ .section-header .title {
+	font-family: 'Dancing Script', cursive;
+  margin-top:0px;
+ 
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+	color:#151515;
+	font-family: 'Quicksand', sans-serif;
+} 
+
+.white-text{
+	font-family: 'Dancing Script', cursive;
+    color: #FFF;
+}
+
+/* =========================================================== */
+
+/*------------------------------------*\
+	Menu
+\*------------------------------------*/
+ :root {
+    --wesbos: #ffc600;
   }
   
-  .jumbotron-background {
-    object-fit:cover;
-    font-family: 'object-fit: cover;';
-    position:absolute;
-    top:0;
-    z-index:1;
-    width:100%;
-    height:100%;
-    opacity:0.5;
+  .menu {
+    display: none;
+  }
+  .menu--is-visible {
+    display: grid;
+  }
+  @media (min-width: 768px) {
+    .menu {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 80px;
+    }
   }
   
-  img.blur {
-      -webkit-filter: blur(4px);
-      filter: blur(4px);
-    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='4');
+  .item__header {
+    display: flex;
+    align-items: baseline;
+  }
+  .item__title {
+    font: 35px cookie, cursive;
+    color: var(--wesbos);
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  .item__dots {
+    flex: 1;
+    border-bottom: 1px dashed #aaa;
+    margin: 0 15px;
+  }
+  .item__price {
+    color: var(--wesbos);
+    font: 31px cookie, cursive;
+  }
+  .item__description {
+    margin-bottom: 40px;
+  }
   
-  } */ 
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+  @media (min-width: 768px) {
+    .buttons-container {
+      margin-bottom: 60px;
+    }
+  }
+  
+  .button {
+    margin: 5px 15px;
+    padding: 10px 20px;
+    border: 1px solid var(--wesbos);
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background: var(--wesbos);
+    border-radius: 3px;
+    z-index: -1;
+    transition: 0.24s;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://projects.saicharan.com/navpills/veg-table.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #fff;
+  } */
+  
+  .wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* h2 {
+    display: inline-block;
+    border-bottom: 4px solid var(--wesbos);
+    margin-top: 0;
+    font: 50px cookie, cursive;
+  }
+    */
