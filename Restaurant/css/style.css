@@ -169,4 +169,14 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     font: 50px cookie, cursive;
   }
-    */
+	*/
+	
+/* Contact */
+
+#contact{
+	background-color: rgba(221, 221, 221, 0.33);
+}
+
+.section-padding {
+	padding:60px 0px;
+}
