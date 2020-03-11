@@ -18,7 +18,7 @@
 
         <!-- Custom stlylesheet -->
       
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="./css/style.css"/>
         
      <title>My Restaurant</title>
 
@@ -46,7 +46,7 @@
 
     <div class="jumbotron jumbotron-fluid big-banner" style="height: 1000px; padding-top: 150px;">
             <div class="container">
-                <div class="col-md-10 col-md-offset-1 text-center">
+                <div class="col-md-12 col-md-offset-1 text-center">
 					<div class="home-content text-light">
 						<h1 class="white-text">Welcome To Risotto Restaurant</h1>
 						<h4 class="white-text lead">Nec solet elaboraret eu, ea usu vidit accusam. Ea per legimus singulis percipitur. Graecis ullamcorper nec ex, vix euismod detraxit voluptaria at.</h4>
@@ -355,101 +355,165 @@
   <!-- END section -->
 
   <!-- Book a table  -->
+  <div id="reservation" class="section">
 
-  <section id="contact" class="section-padding">
+    <!-- Backgound Image -->
+    <div class="bg-image" style="background-image:url(./img/background03.jpg)"></div>
+    <!-- /Backgound Image -->
+
+    <!-- container -->
     <div class="container">
+
+      <!-- row -->
       <div class="row">
-        <div class="col-md-12 text-center">
-          <h1 class="header-h">Book Your table</h1>
-          <p class="header-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-            <br>nibh euismod tincidunt ut laoreet dolore magna aliquam. </p>
-        </div>
-      </div>
-      <div class="row msg-row">
-        <div class="col-md-4 col-sm-4 mr-15">
-          <div class="media-2">
-            <div class="media-left">
-              <div class="contact-phone bg-1 text-center"><span class="phone-in-talk fa fa-phone"></span></div>
-            </div>
-            <div class="media-body">
-              <h4 class="dark-blue regular">Phone Numbers</h4>
-              <p class="light-blue regular alt-p">+440 875369208 - <span class="contacts-sp">Phone Booking</span></p>
-            </div>
-          </div>
-          <div class="media-2">
-            <div class="media-left">
-              <div class="contact-email bg-14 text-center"><span class="hour-icon fa fa-clock-o"></span></div>
-            </div>
-            <div class="media-body">
-              <h4 class="dark-blue regular">Opening Hours</h4>
-              <p class="light-blue regular alt-p"> Monday to Friday 09.00 - 24:00</p>
-              <p class="light-blue regular alt-p">
-                Friday and Sunday 08:00 - 03.00
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8 col-sm-8">
-          <form action="" method="post" role="form" class="contactForm">
-            <div id="sendmessage">Your booking request has been sent. Thank you!</div>
-            <div id="errormessage"></div>
-            <div class="col-md-6 col-sm-6 contact-form pad-form">
-              <div class="form-group label-floating is-empty">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
 
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="date" class="form-control label-floating is-empty" name="date" id="date" placeholder="Date" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form pad-form">
-              <div class="form-group">
-                <input type="email" class="form-control label-floating is-empty" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="time" class="form-control label-floating is-empty" name="time" id="time" placeholder="Time" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="phone" id="phone" placeholder="Phone" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control label-floating is-empty" name="people" id="people" placeholder="People" data-rule="required" data-msg="This field is required" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="col-md-12 contact-form">
-              <div class="form-group label-floating is-empty">
-                <textarea class="form-control" name="message" rows="5" rows="3" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
+        <div class="col-md-6">
+        <!-- reservation form -->
+      
+<!-- Default form contact -->
+<form class="text-center border border-light p-5" action="#!">
 
+  <p class="h4 mb-4">Contact us</p>
+
+  <!-- Name -->
+  <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+  <!-- Email -->
+  <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+  <!-- Subject -->
+  <label>Subject</label>
+  <select class="browser-default custom-select mb-4">
+      <option value="" disabled>Choose option</option>
+      <option value="1" selected>Feedback</option>
+      <option value="2">Report a bug</option>
+      <option value="3">Feature request</option>
+      <option value="4">Feature request</option>
+  </select>
+
+  <!-- Message -->
+  <div class="form-group">
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+  </div>
+
+  <!-- Copy -->
+  <div class="custom-control custom-checkbox mb-4">
+      <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+      <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+  </div>
+
+  <!-- Send button -->
+  <button class="btn btn-info btn-block" type="submit">Send</button>
+
+</form>
+
+</div>
+<!-- Default form contact -->
+        <!-- /reservation form -->
+
+        <!-- opening time -->
+        <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+          <div class="opening-time row">
+            <div class="section-header text-center">
+              <h2 class="title white-text">Opening Time</h2>
             </div>
-            <div class="col-md-12 btnpad">
-              <div class="contacts-btn-pad">
-                <button class="contacts-btn">Book Table</button>
-              </div>
-            </div>
-          </form>
+            <ul>
+              <li>
+                <h4 class="day">Sunday</h4>
+                <h4 class="hours">8:00 am – 11:00 pm</h4>
+              </li>
+              <li>
+                <h4 class="day">Monday</h4>
+                <h4 class="hours">8:00 am – 11:00 pm</h4>
+              </li>
+              <li>
+                <h4 class="day">Tuesday</h4>
+                <h4 class="hours">8:00 am – 11:00 pm</h4>
+              </li>
+              <li>
+                <h4 class="day">Wednesday</h4>
+                <h4 class="hours">8:00 am – 11:00 pm</h4>
+              </li>
+              <li>
+                <h4 class="day">Thursday</h4>
+                <h4 class="hours">8:00 am – 11:00 pm</h4>
+              </li>
+              <li>
+                <h4 class="day">Friday</h4>
+                <h4 class="hours">Closed</h4>
+              </li>
+              <li>
+                <h4 class="day">Saturday</h4>
+                <h4 class="hours">Closed</h4>
+              </li>
+            </ul>
+          </div>
         </div>
+        <!-- /opening time -->
+
       </div>
+      <!-- /row -->
+
     </div>
-  </section>
-  <!-- / contact -->
+    <!-- /container -->
 
+
+
+  </div>
+
+  <!-- /Reservation -->
+  <!-- / contact -->
   
+
+  	<!-- Footer -->
+		<footer id="footer">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<!-- copyright -->
+					<div class="col-md-6">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						<span class="copyright">Copyright @2018 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</div>
+					<!-- /copyright -->
+
+					<!-- footer nav -->
+					<div class="col-md-6">
+						<nav class="footer-nav">
+							<a href="index.html">Home</a>
+							<a href="index.html#about">About</a>
+							<a href="index.html#menu">Menu</a>
+							<a href="index.html#reservation">Reservation</a>
+							<a href="index.html#events">Events</a>
+							<a href="index.html#contact">Contact</a>
+						</nav>
+					</div>
+					<!-- /footer nav -->
+
+				</div>
+				<!-- /row -->
+
+			</div>
+			<!-- /container -->
+
+		</footer>
+		<!-- /Footer -->
+
+		<!-- Preloader -->
+		<div id="preloader">
+			<div class="preloader">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- /Preloader -->
+
 
 
   <script src="./jquery/jquery.min.js"></script>
