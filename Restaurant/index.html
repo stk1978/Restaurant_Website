@@ -371,41 +371,45 @@
         <!-- reservation form -->
       
 <!-- Default form contact -->
-<form class="text-center border border-light p-5" action="#!">
 
-  <p class="h4 mb-4">Contact us</p>
 
-  <!-- Name -->
-  <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
 
-  <!-- Email -->
-  <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+<form id="fs-frm" name="survey-form" accept-charset="utf-8" action="https://formspree.io/xeqzjkak" method="post">
+  <fieldset id="fs-frm-inputs">
+    <div class="section-header text-center">
+      <h4 class="sub-title mt-3">Reservation</h4>
+      <h2 class="title">Book Your Table</h2>
+    </div>
+    <!-- <label for="full-name">Full Name</label> -->
+    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+    <!-- <label for="email-address">Email Address</label> -->
+    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+    <fieldset id="fs-frm-selects">
+      <!-- <label for="timely">1. The service provided was completed in a timely manner.</label> -->
+      <select name="timely" id="timely" required="">
+        <option value="Choose" selected="" disabled="">Choose</option>
+        <option value="1">Strongly Agree</option>
+        <option value="3">Agree</option>
+        <option value="5">Neutral</option>
+        <option value="7">Disagree</option>
+        <option value="9">Strongly Disagree</option>
+      </select>
+      <!-- <label for="timely">2. The quality of work was high in quality.</label> -->
+      <select name="quality" id="quality" required="">
+        <option value="Choose" selected="" disabled="">Choose</option>
+        <option value="1">Strongly Agree</option>
+        <option value="3">Agree</option>
+        <option value="5">Neutral</option>
+        <option value="7">Disagree</option>
+        <option value="9">Strongly Disagree</option>
+      </select>
+    </fieldset>
+    <!-- <label for="message">Additional Comments</label> -->
+    <textarea rows="3" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+  </fieldset>
+  <input type="submit" value="Send Responses">
 
-  <!-- Subject -->
-  <label>Subject</label>
-  <select class="browser-default custom-select mb-4">
-      <option value="" disabled>Choose option</option>
-      <option value="1" selected>Feedback</option>
-      <option value="2">Report a bug</option>
-      <option value="3">Feature request</option>
-      <option value="4">Feature request</option>
-  </select>
-
-  <!-- Message -->
-  <div class="form-group">
-      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
-  </div>
-
-  <!-- Copy -->
-  <div class="custom-control custom-checkbox mb-4">
-      <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-      <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-  </div>
-
-  <!-- Send button -->
-  <button class="btn btn-info btn-block" type="submit">Send</button>
-
-</form>
 
 </div>
 <!-- Default form contact -->
@@ -483,7 +487,7 @@
 					<!-- /copyright -->
 
 					<!-- footer nav -->
-					<div class="col-md-6">
+					<!-- <div class="col-md-6">
 						<nav class="footer-nav">
 							<a href="index.html">Home</a>
 							<a href="index.html#about">About</a>
@@ -492,7 +496,7 @@
 							<a href="index.html#events">Events</a>
 							<a href="index.html#contact">Contact</a>
 						</nav>
-					</div>
+					</div> -->
 					<!-- /footer nav -->
 
 				</div>
