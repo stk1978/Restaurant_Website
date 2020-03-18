@@ -172,7 +172,16 @@ function closeNav() {
 
 
 
-(function($) {
+
+//  Google Maps
+
+
+
+
+
+
+
+// (function($) {
 
 //   // Menu filer
 //   $("#menu-flters li a").click(function() {
