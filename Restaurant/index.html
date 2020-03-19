@@ -481,19 +481,21 @@
 
 	<!-- Contact -->
   <div id="contact" class="section">
-
     <!-- container -->
     <div class="container">
-
       <!-- row -->
       <div class="row">
-
+        <div class="col-md-7">
+        <div id="map"></div>
+      </div>
         <div class="col-md-5 col-md-offset-7">
+          <div class="touch">
           <div class="section-header">
-            <h4 class="sub-title">Contact Us</h4>
+            <!-- <h4 class="sub-title">Contact Us</h4> -->
             <h2 class="title">Get In Touch</h2>
           </div>
           <div class="contact-content">
+            <div col-md-7></div>
             <p>Te sit stet labitur veritus, sea similique consetetur ut. Ne fastidii oportere usu. Iusto mediocrem iudicabit ea eos, nemore offendit detraxit ei cum.</p>
             <h3>Tel: <a href="#">045-548-14-97</a></h3>
             <p>Address: 3685 Granville Lane</p>
@@ -506,19 +508,12 @@
             </ul>
           </div>
         </div>
-
-
+        </div>
+        </div>
       </div>
-      <!-- /row -->
-
     </div>
-    <!-- /container -->
+  <!-- </div> -->
 
-    <!-- map -->
-    <div id="map"></div>
-    <!-- /map -->
-
-  </div>
   <!-- Contact -->
 
 
@@ -612,24 +607,24 @@ $('.owl-carousel').owlCarousel({
 
 <script>
   // Initialize and add the map
-  function initMap() {
+  // function initMap() {
     // The location of Uluru
-    var uluru = {lat: 44.948514, lng: -93.287867};   
+    // var uluru = {lat: 44.948514, lng: -93.287867};   
     // The map, centered at Uluru
-    var map = new google.maps.Map(
-        document.getElementById('map'), {zoom: 15, center: uluru});
+    // var map = new google.maps.Map(
+    //     document.getElementById('map'), {zoom: 15, center: uluru});
     // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: uluru, map: map});
-  }
-      </script>
+    // var marker = new google.maps.Marker({position: uluru, map: map});
+  // }
+      // </script>
       <!--Load the API from the specified URL
       * The async attribute allows the browser to render the page while the API loads
       * The key parameter will contain your own API key (which is not needed for this tutorial)
       * The callback parameter executes the initMap() function
       -->
-      <script async defer
+      <!-- <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZuOzOATAtwn3J39lE_xsK2O6IUXUEfAw&callback=initMap">
-      </script>
+      </script> -->
 
 
 

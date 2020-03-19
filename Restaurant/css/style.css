@@ -60,6 +60,8 @@ h1,h2,h3,h4,h5,h6 {
 /*------------------------------------*\
 	Menu
 \*------------------------------------*/
+
+
  :root {
     --wesbos: #ffc600;
   }
@@ -159,12 +161,24 @@ h1,h2,h3,h4,h5,h6 {
   }
   
 
-/* Contact */
+/* Reservation */
+
+.opening-time {
+  padding: 40px 8% 40px;
+  background: #151515;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.reserve-form{
+  border-radius: 20px;
+}
 
 
 .section-header .sub-title {
   /* font-weight: 400; */
   color: #f36700;
+  
 }
 
 h4 {
@@ -186,6 +200,16 @@ h1, h2, h3, h4, h5, h6 {
 .section-header .title {
   font-family: 'Dancing Script', cursive;
   margin-top: 0px;
+}
+
+.touch{
+  padding-top: 50px;
+}
+
+.list-inline>li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 h2 {
