@@ -1,4 +1,11 @@
 
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
+
 body {
 	color:#969696;
 	font-size:16px;
@@ -34,6 +41,20 @@ a {
 	transition:0.2s color;
 }
 
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  width: 70%;
+  min-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 .big-banner{
     background-image:url('../img/background02.jpg') ;
@@ -63,7 +84,7 @@ h1,h2,h3,h4,h5,h6 {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	height:350px;
+	height:500px;
 }
 
 
@@ -80,17 +101,6 @@ h1,h2,h3,h4,h5,h6 {
 #img01{
   height:400px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
   .menu {
     display: none;
@@ -172,7 +182,7 @@ h1,h2,h3,h4,h5,h6 {
     min-height: 800px;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/background01.jpg');   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/menu.jpg');   
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -244,11 +254,20 @@ h2 {
 }
 
 
-#map {
-  height: 500px;  
-  width: 500px;  
- }
 
+
+/*------------------------------------*\
+	Contact
+\*------------------------------------*/
+ #map {
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:20px;
+  width:100%;
+  height: 400px;
+  margin-left: 100px;
+}
 
 
 
@@ -259,14 +278,23 @@ h2 {
 /*------------------------------------*\
 	Footer
 \*------------------------------------*/
-#footer {
-	padding-top:40px;
-	padding-bottom:40px;
-	background-color:#151515;
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+ }
+
+/* #footer {
+	/* padding-top:40px;
+	padding-bottom:40px; */
+  /* background-color:#151515;
+  margin-top: 150px;
 }
 
-.footer-nav {
-	text-align:right
+.footer-nav { */
+	/* text-align:right
 }
 
 .footer-nav a {
@@ -279,4 +307,4 @@ h2 {
 
 .footer-nav a:hover , .footer-nav a:focus {
 	color:#f36500;
-}
+}  */
