@@ -308,3 +308,101 @@ footer {
 .footer-nav a:hover , .footer-nav a:focus {
 	color:#f36500;
 }  */
+
+
+/* 
+DatePicker & TimePicker */
+
+element.style {
+  position: absolute;
+  top: 293.168px;
+  left: 306.819px;
+}
+
+#scrollDefaultExample{
+  width: 7.5em;
+  text-align: center;
+} 
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.example {
+  -ms-overflow-style: none;
+}
+
+.ui-timepicker-list{
+  background: black;
+  color: white;
+  list-style-type: none; 
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+/* .ui-timepicker-list ::-webkit-scrollbar {
+  display: none;
+} */
+
+/* Hide scrollbar for IE and Edge */
+/* .ui-timepicker-list {
+  -ms-overflow-style: none;
+}
+*/
+
+.ui-timepicker-wrapper {
+  overflow-y: auto;
+  max-height: 100px;
+  width: 8.5em;
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+  outline: none;
+  z-index: 10052;
+  margin: 0;
+}
+
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+  background-color: black;
+  color: white;
+}
+
+
+.ui-datepicker .ui-datepicker-title {
+  margin: 0 2.3em;
+  line-height: 1.8em;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+  background-color: black;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid #c5c5c5;
+  background: black;
+  font-weight: normal;
+  color: white;
+}
+
+.ui-widget-content .ui-state-default:hover {
+background:red;
+}
+
+.ui-button:hover{
+  color: blue;
+} 
