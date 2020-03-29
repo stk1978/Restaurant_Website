@@ -3,8 +3,8 @@ html,
 body {
  height: 100%;
  position: relative;
+ width: 100%;
 }
-
 
 body {
 	color:#969696;
@@ -12,6 +12,7 @@ body {
 	overflow-x:hidden;
 	font-family: 'Cabin', sans-serif;
 }
+
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight:700;
@@ -56,9 +57,17 @@ a {
   margin: 0 auto;
 }
 
-.big-banner{
-    background-image:url('../img/background02.jpg') ;
-    font-family: 'Dancing Script', cursive;
+.jumbotron {
+  background: url('../img/background02.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  font-family: 'Dancing Script', cursive;
 }
 
 
@@ -255,6 +264,142 @@ h2 {
 
 
 
+#reservation.section {
+  padding-bottom: 0px;
+}
+
+.section {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+#reservation .bg-image  {
+height:75%;
+}
+
+.reserve-form {
+padding: 30px 2% 30px;
+background: rgba(21, 21, 21, 0.9);
+}
+
+.reserve-form  .form-group {
+margin-bottom:30px;
+}
+
+.reserve-form  .form-group label {
+color: #FFF;
+margin-left: 10px;
+}
+
+.reserve-form .input {
+border-color: rgba(255, 255, 255, 0.2);
+}
+
+.opening-time {
+padding: 40px 8% 40px;
+background: #151515;
+margin-top: 40px;
+}
+
+.opening-time ul li .day {
+display:inline-block;
+font-weight:400;
+color:#fff;
+}
+
+.opening-time ul li .hours {
+float: right;
+font-size: 14px;
+margin-top: 5px;
+font-weight:400;
+  color:#f36500;
+  padding-left: 30px;
+}
+
+.section-header .title {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 0px;
+  color:black;
+}
+
+.sub-title{
+  color: white;
+}
+
+
+.input {
+width: 100%;
+height: 40px;
+padding: 0px 10px;
+border: 2px solid #ECECEC;
+border-radius: 40px;
+background: #2C2C2C;
+color: white;
+}
+
+textarea.input {
+height: 160px;
+padding: 10px;
+border-radius: 20px;
+}
+
+.reserve-form .input {
+border-color: rgba(255, 255, 255, 0.2);
+}
+
+.main-button {
+display:inline-block;
+padding:15px 30px;
+border:none;
+border-radius:40px;
+background-color:#f36700;
+color:#FFF;
+text-transform: uppercase;
+font-weight: 700;
+-webkit-transition:0.2s opacity;
+transition:0.2s opacity;
+}
+.main-button:hover {
+color:#FFF;
+opacity:0.8;
+}
+
+
+.bg-image {
+position:absolute;
+left:0;
+right:0;
+top:0;
+bottom:0;
+background-position:center;
+background-size:cover;
+z-index:-1;
+}
+
+.bg-image.bg-parallax {
+background-attachment:fixed;
+}
+
+.bg-image.overlay:after {
+content:"";
+position:absolute;
+left:0;
+right:0;
+top:0;
+bottom:0;
+opacity: 0.7;
+background-color:#000;
+}
+
+
+#reservation .bg-image  {
+height:75%;
+}
+
+
+
 
 /*------------------------------------*\
 	Contact
@@ -268,11 +413,6 @@ h2 {
   height: 400px;
   margin-left: 100px;
 }
-
-
-
-
-
 
 
 /*------------------------------------*\
@@ -320,8 +460,14 @@ element.style {
 }
 
 #scrollDefaultExample{
-  width: 7.5em;
+  /* width: 7.5em; */
   text-align: center;
+  width: 100%;
+  height: 40px;
+  padding: 0px 10px;
+  /* border: 2px solid #ECECEC; */
+  border-radius: 40px;
+  background: transparent;
 } 
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -335,7 +481,7 @@ element.style {
 }
 
 .ui-timepicker-list{
-  background: black;
+  /* background:rgba(21, 21, 21, 0.9); */
   color: white;
   list-style-type: none; 
 }
@@ -355,16 +501,16 @@ element.style {
 .ui-timepicker-wrapper {
   overflow-y: auto;
   max-height: 100px;
-  width: 8.5em;
-  background: #fff;
-  border: 1px solid #ddd;
+  width: 7.5em;
+  /* background: #fff;
+  border: 1px solid #ddd; */
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
-
   outline: none;
   z-index: 10052;
-  margin: 0;
+  margin-left: 55px;
+  padding-top: 5px;
 }
 
 
@@ -373,7 +519,7 @@ element.style {
   font-size: .9em;
   border-collapse: collapse;
   margin: 0 0 .4em;
-  background-color: black;
+  background-color:rgba(21, 21, 21, 0.9);
   color: white;
 }
 
@@ -389,12 +535,12 @@ element.style {
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: .2em 0;
-  background-color: black;
+  background-color: rgba(21, 21, 21, 0.9);
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
   border: 1px solid #c5c5c5;
-  background: black;
+  background: rgba(21, 21, 21, 0.9);
   font-weight: normal;
   color: white;
 }
@@ -405,4 +551,37 @@ background:red;
 
 .ui-button:hover{
   color: blue;
+} 
+
+
+/* .ui-widget-content {
+  border: none;
+  background:rgba(21, 21, 21, 0.9);;
+  color: #333;
+} */
+
+.ui-widget-content{
+
+background: none;
+margin-top: 5px;
+margin-right: 10px;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  right: 2px;
+  background: white;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px;
+  background: #F36700;
+}
+
+.ui-datepicker .ui-widget .ui-widget-content .ui-helper-clearfix ui-corner-all{
+  position: absolute;
+  top: 3439.05px;
+  left: 300.344px;
+  z-index: 1;
+  display: block;
+
 } 

@@ -7,6 +7,10 @@
          <!-- Bootstrap -->
          <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
 
+         <!-- DatePicker -->
+         <link rel="stylesheet" href="jquery-ui.min.css">
+         <link rel="stylesheet" href="bootstrap-datepicker.css"> 
+
             <!-- Owl Caruel -->
             <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
             <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.min.css">
@@ -17,9 +21,7 @@
       <!-- <script src="https://kit.fontawesome.com/78032672bf.js" crossorigin="anonymous"></script> -->
 
         <!-- Custom stlylesheet -->
-      
         <link type="text/css" rel="stylesheet" href="./css/style.css"/>
-        <link type="text/css" rel="stylesheet" href="./css/contact.css"/> 
         <link type="text/css" rel="stylesheet" href="./css/all.min.css"/> 
         <link type="text/css" rel="stylesheet" href="./css/fontawesome.min.css"/> 
         <!-- <link type="text/css" rel="stylesheet" href="./css/contact.css"/>  -->
@@ -48,7 +50,7 @@
 
     <!-- Home -->
 
-    <div class="jumbotron jumbotron-fluid big-banner" style="height: 1000px; padding-top: 150px;">
+    <div class="jumbotron big-banner" style="height: 1000px; padding-top: 150px;">
             <div class="container">
                 <div class="col-md-12 col-md-offset-1 text-center">
 					<div class="home-content text-light">
@@ -347,67 +349,80 @@
   <!-- container -->
   <div class="container">
 
-      <!-- row -->
-      <div class="row">
 
-          <!-- reservation form -->
-          
-          <div class="col-md-6 reserve-form row">
+    <div class="row">
+
+     
+        
+         <div class="col-md-6 reserve-form row">
 
 
-            <form action="https://formspree.io/xeqzjkak" method="POST">
-                  <div class="col-md-12">
-                  <div class="section-header text-center">
-                      <h4 class="sub-title">Reservation</h4>
-                      <h2 class="title white-text">Book Your Table</h2>
-                  </div>
-              </div>
-                    <div class="row">
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="name">Name:</label>
-                          <input class="input" type="text" placeholder="Name" id="name" name="name">
-                      </div>
-                      <div class="form-group">
-                          <label for="phone">Phone:</label>
-                          <input class="input" type="tel" placeholder="Phone" id="phone" name="phone">
-                      </div>
-                      <div class="form-group">
-                          <label for="date">Date:</label>
-                          <input class="input" type="text" placeholder="MM/DD/YYYY" id="date" name="date">
-                      </div>
-                  </div>
+          <form action="https://formspree.io/xeqzjkak" method="POST">
+                <div class="col-md-12">
+                <div class="section-header text-center">
+                    <h4 class="sub-title">Reservation</h4>
+                    <h2 class="title white-text">Book Your Table</h2>
+                </div>
+            </div>
+                  <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input class="input" type="text" placeholder="Name" id="name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input class="input" type="tel" placeholder="Phone" id="phone" name="phone">
+                    </div>
+                    <div class="form-group datepicker">
+                        <label for="date">Date:</label>
+                        <input class="input" type="text" placeholder="" id="datepicker" name="date">
+                    </div>
 
-                  <div class="col-md-6">
-                      <div class="form-group">
-                          <label for="email">Email:</label>
-                          <input class="input" type="email" placeholder="Email" id="email" name="replyto">
+                    <!-- <div id="datetimepicker4" class="input-append">
+                        <input data-format="yyyy-MM-dd" type="text"></input>
+                        <span class="add-on">
+                          <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+                          </i>
+                        </span>
                       </div>
-                      <div class="form-group">
-                          <label for="number">Number of Guests:</label>
-                          <select class="input" id="number" name="guests">
-                              <option>1 Person</option>
-                              <option>2 People</option>
-                              <option>3 People</option>
-                              <option>4 People</option>
-                              <option>5 People</option>
-                              <option>6 People</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                        <label for="time">Time:</label>
-                        <input class="input" type="text" placeholder="HH:MM" id="time" name="time">
-                      </div>
-                  </div>
-                  </div>
+                    </div> -->
 
-                  <div class="col-md-12 text-center">
-                    <button type="submit" class="main-button">Book Now</button>
-                      <!-- <button class="main-button" >Book Now</button> -->
-                  </div>
 
-              </form>
-          </div>
+
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="input" type="email" placeholder="Email" id="email" name="replyto">
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Number of Guests:</label>
+                        <select class="input" id="number" name="guests">
+                            <option>1 Person</option>
+                            <option>2 People</option>
+                            <option>3 People</option>
+                            <option>4 People</option>
+                            <option>5 People</option>
+                            <option>6 People</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="time">Time:</label>
+                      <!-- <input class="input" id="#scrollDefaultExample" type="text" placeholder="HH:MM" id="time" name="time"> -->
+                      <input id="scrollDefaultExample" type="text" class="input time ui-timepicker-input " name="time" autocomplete="off">
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="main-button">Book Now</button>
+                </div>
+
+            </form>
+        </div>
+
           <!-- /reservation form -->
 
           <!-- opening time -->
@@ -557,35 +572,14 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <!-- <script type="text/javascript" src="./js/google-map.js"></script> -->
+  <script type="text/javascript" src="jquery-ui.min.js"></script>
+  <script src="jquery.timepicker.min.js"></script>
   <script src="./js/javascript.js"></script>
   <script src="./js/google-maps.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZuOzOATAtwn3J39lE_xsK2O6IUXUEfAw&callback=initMap"
   async defer></script>
 <script>
-// $('.owl-carousel').owlCarousel({
-//   items:2,
-//     loop:true,
-//     margin:10,
-//     responsiveClass:true,
-//     autoplay:true,
-//     autoplayTimeout:1000,
-//     autoplayHoverPause:true,
-//     responsive:{
-//         0:{
-//             items:1,
-//             nav:true
-//         },
-//         600:{
-//             items:3,
-//             nav:false
-//         },
-//         1000:{
-//             items:5,
-//             nav:true,
-//             loop:false
-//         }
-//     }
-// })
+
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     items:2,
@@ -595,16 +589,22 @@ owl.owlCarousel({
     autoplayTimeout:5000,
     autoplayHoverPause:true
 });
-// $('.play').on('click',function(){
-//     owl.trigger('play.owl.autoplay',[1000])
-// })
-// $('.stop').on('click',function(){
-//     owl.trigger('stop.owl.autoplay')
-// })
+
 </script>
 
-   
+<script>
+                
+  $("#datepicker" ).datepicker();
 
+</script>
+
+<script> 
+$('#scrollDefaultExample').timepicker({ 
+  'scrollDefault': 'now' ,
+  scrollInput : false
+  });
+
+</script>
 
 
 </body>
