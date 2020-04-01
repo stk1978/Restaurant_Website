@@ -9,6 +9,10 @@
  body {
   height: 100%;
   position: relative;
+  color: #969696;
+    font-size: 16px;
+    overflow-x: hidden;
+    font-family: 'Cabin', sans-serif;
  }
 
  .main-container {
@@ -53,7 +57,7 @@ flex-direction: column;
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight:700;
-	color:#151515;
+color: white;
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -269,11 +273,11 @@ h1,h2,h3,h4,h5,h6 {
   /* font-size: 16px; */ 
 
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #151515;
   font-family: 'Quicksand', sans-serif;
-}
+} */
 .h4, h4 {
   font-size: 18px;
 }
@@ -282,10 +286,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
 }
 
-.section-header .title {
+/* .section-header .title {
   font-family: 'Dancing Script', cursive;
   margin-top: 0px;
-}
+} */
 
 /* .text-center .title:after {
 	margin: 15px auto 30px;
