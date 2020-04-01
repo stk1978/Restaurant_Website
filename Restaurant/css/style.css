@@ -55,9 +55,9 @@ flex-direction: column;
 }
 
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h5,h6 {
 	font-weight:700;
-color: white;
+color:darkkhaki;
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -74,11 +74,12 @@ h3 {
 }
 
 h4 {
-	font-size:16px;
+  font-size:16px;
+  
 }
 
 a {
-	color:#151515;
+	color:white;
 	-webkit-transition:0.2s color;
 	transition:0.2s color;
 }
@@ -98,6 +99,12 @@ a {
   margin: 0 auto;
 } */
 
+
+.btn-primary-outline {
+  background-color: transparent;
+  border-color: #ccc;
+}
+
 .jumbotron {
   /* background: url('../img/background02.jpg') no-repeat center center fixed; */
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background02.jpg');   
@@ -105,12 +112,20 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   height: 50vh;
   width: 100%;
   overflow: hidden;
   color: white;
   font-family: 'Dancing Script', cursive;
+
 }
+
+.white-text{
+  font-family: 'Dancing Script', cursive;
+    /* color:white; */
+}
+
 /*
 
 h1,h2,h3,h4,h5,h6 {
@@ -119,14 +134,40 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Quicksand', sans-serif;
 } 
 
-.white-text{
-  font-family: 'Dancing Script', cursive;
-    color: #FFF;
-}
+
 
 /* Caruzel */
 
 \*------------------------------------*/
+
+#todaysmenu{
+  color: white;
+}
+
+/* .display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: white;
+} */
+/* 
+.nav-link {
+  border-radius: .25rem;
+  color: white;
+  font-size: 30px;
+} */
+
+/* #black{
+color: chocolate;
+} */
+.lead{
+margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+
+
+  }
 #Gallery {
 	margin-top:20px;
 }
@@ -371,7 +412,7 @@ font-weight:400;
 .section-header .title {
   font-family: 'Dancing Script', cursive;
   margin-top: 0px;
-  color:black;
+  color:darkkhaki;
 }
 
 .sub-title{
@@ -402,17 +443,18 @@ border-color: rgba(255, 255, 255, 0.2);
 .main-button {
 display:inline-block;
 padding:15px 30px;
-border:none;
+/* border:none; */
 border-radius:40px;
-background-color:#f36700;
-color:#FFF;
+/* background-color:#f36700; */
+color:darkkhaki;
 text-transform: uppercase;
 font-weight: 700;
--webkit-transition:0.2s opacity;
-transition:0.2s opacity;
+width: 250px;
+/* -webkit-transition:0.2s opacity;
+transition:0.2s opacity; */
 }
 .main-button:hover {
-color:#FFF;
+color:orangered;
 opacity:0.8;
 }
 
