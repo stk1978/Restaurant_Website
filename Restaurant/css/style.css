@@ -31,21 +31,24 @@
 
 /* Navbar section */
 
-nav{    
+/* nav{    
   position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   z-index: 99999;
-} 
+}  */
 
-.bg-dark {
+.trn{
   background-color: transparent !important;
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+z-index: 99;
 }
 
-.navbar-dark{
+
+/* .navbar-dark{
   background-color: transparent !important;
-}
+} */
 /* 
 .nav {
   width: 100%;
