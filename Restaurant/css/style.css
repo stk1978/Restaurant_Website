@@ -63,10 +63,11 @@
 
 .bg-dark{
   background-color:transparent !important;
-  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); */
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); 
   z-index: 99;
- background-color: black; 
+ background-color:black; 
 }
+
 
 .bg-dark.scrolled{
   background-color:black !important;
@@ -85,6 +86,7 @@
   line-height: inherit;
   white-space: nowrap;
   font-family: 'Dancing Script', cursive;
+  color: darkkhaki;
 }
 
 .nav-link{
@@ -292,9 +294,9 @@ margin-bottom: 0;
 
 
 
-.white-text{
+.links{
   font-family: 'Dancing Script', cursive;
-    color:white;
+    color:darkkhaki;
 }
 
 
