@@ -17,8 +17,8 @@ font-family: 'Cedarville Cursive', cursive; */
  body {
   height: 100%;
   position: relative;
-  /* color: #969696; */
-    font-size: 16px;
+  color: #969696;
+    font-size: 18px;
     /* overflow-x: hidden; */
     font-family: 'Cabin', sans-serif;
  }
@@ -72,6 +72,8 @@ font-family: 'Cedarville Cursive', cursive; */
   background-color:transparent !important;
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); 
   z-index: 99;
+  padding-top: 30px;
+  margin-right: 3px;
  background-color:black; 
 }
 
@@ -168,10 +170,10 @@ margin-bottom: 0;
   right: 0;
 }
 
-
-
-
-
+#inform{
+ margin-top: 80px;
+ margin-bottom: 80px; 
+}
 
 .links{
   font-family: 'Dancing Script', cursive;
@@ -179,23 +181,37 @@ margin-bottom: 0;
     font-size: 25px;
 }
 
+.title {
+  font-size: 61px;
+  padding-bottom: 20px;
+  color: black;
+}
 
-
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: darkkhaki;
+}
 
 /* Caruzel */
 
 \*------------------------------------*/
 
-#todaysmenu{
+/* #todaysmenu{
   color: white;
-}
+  font-family: 'Dancing Script', cursive;
+  font-size: 61px;
+} */
 
-#about{
+ #section{
   background-color: whitesmoke;
+  margin-top: 80px;
+  margin-bottom: 80px;
+} 
+/* 
+.section{
   padding-top: 80px;
   padding-bottom: 80px;
-}
-
+} */
 .lead{
 margin-bottom: 20px;
     font-size: 21px;
@@ -378,7 +394,11 @@ margin-bottom: 20px;
   
   #todayMenu{
     color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 61px;
   }
+
+
    .menubody {
     margin: 0;
     min-height: 800px;
@@ -423,10 +443,11 @@ margin-bottom: 20px;
 .h4, h4 {
   font-size: 18px;
 }
-.h4, .h5, .h6, h4, h5, h6 {
+
+/* .h4, .h5, .h6, h4, h5, h6 {
   margin-top: 10px;
   margin-bottom: 10px;
-}
+} */
 
 .white-text{
   color: white;
@@ -443,11 +464,6 @@ margin-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
 }
-
-h2 {
-  font-size: 36px;
-}
-
 
 
 #reservation.section {
@@ -775,12 +791,29 @@ margin-right: 10px;
 	
 }
 
+
+
+
+
+@media only screen and (max-width: 360px){
+
+
+.lead{
+  display: none;
+}
+
+
+
+}
+
+
+
  @media only screen and (max-width: 480px) {
 
   .brand {
     display: inline-block;
     /* margin-right: 2rem; */
-    /* margin-left: 2rem; */
+    margin-left: 2rem;
     font-size: 2.30rem;
     /* line-height: inherit; */
     white-space: nowrap;
@@ -807,6 +840,11 @@ margin-right: 10px;
   margin-right: 1px;
 }
 
+.lead{
+  /* display: none; */
+  font-size: 17px;
+}
+
 } 
 
 
@@ -820,7 +858,7 @@ margin-right: 10px;
 @media only screen and (max-width: 991px) {
 	/* --- home --- */
 	.home-content h1 {
-		font-size:46px;
+		font-size:62px;
 	}
 
 	/* --- contact --- */
