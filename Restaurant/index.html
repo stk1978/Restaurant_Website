@@ -430,7 +430,7 @@
 
     <div class="row justify-content-center">
 
-     
+      
         
          <div class="col-md-6 reserve-form row">
 
@@ -494,7 +494,7 @@
           <!-- /reservation form -->
 
           <!-- opening time -->
-          <div class="col-md-4 col-md-offset-0 col-sm-10 col-sm-offset-1">
+          <div class="col-md-5 col-md-offset-0 col-sm-10 col-sm-offset-1">
               <div class="opening-time justify-content-center row">
                   <div class="section-header justify-content-center">
                       <h2 class="white-text open">Opening Time</h2>
@@ -533,6 +533,8 @@
           </div>
           <!-- /opening time -->
 
+      
+
       </div>
       <!-- /row -->
 
@@ -546,10 +548,11 @@
   <div id="contact" class="section">
     <div class="container">
       <div class="row " >
-        <div class="col-md-4 ">
+     
+        <div class="col-lg-5 ">
           <div class="touch">
           <div class="section-header">
-            <h4 class="sub-title">Contact Us</h4>
+            <!-- <h4 class="sub-title">Contact Us</h4> -->
             <h2 class="title">Get In Touch</h2>
           </div>
           <div class="contact-content">
@@ -566,10 +569,10 @@
           </div>
         </div>
         </div>
-        <div class="col-md-8 ">
+        <div class="col-lg-7 ">
           <div id="map"></div>
         </div>
-
+       
         </div>
       </div>
     </div>
@@ -662,12 +665,29 @@
 <script>
 var owl = $('.owl-carousel');
 owl.owlCarousel({
-    items:2,
-    loop:true,
-    margin:10,
+    // items:2,
     autoplay:true,
     autoplayTimeout:5000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+   
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:false
+        }
+    }
 });
 
 </script>
