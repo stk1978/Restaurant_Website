@@ -169,7 +169,7 @@ margin-bottom: 0;
 }
 
 #inform{
- margin-top: 70px;
+ margin-top: 80px;
  margin-bottom: 80px; 
 }
 
@@ -606,8 +606,8 @@ background-color:#000;
 #contact{
 
   /* margin: 100px 0 100px 0px; */
-  padding-top: 58px;
-  padding-bottom: 49px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
  /* #map {
@@ -763,13 +763,12 @@ margin-right: 10px;
 } 
 
 
-
 #footer{
   margin-top: 50px;
   background-color: black;
   color: #7d7d7d;
   width: 100%;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 
 
@@ -780,15 +779,20 @@ margin-right: 10px;
 @media only screen and (max-width: 1201px) {
 
   .opening-time {
-    padding-left: 6px;
+    /* padding-left: 6px;
     padding-right: -23px;
     background: #151515;
     margin-top: 101px;
-    /* margin-left: 10px; */
     border-radius: 10px;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; */
 
+
+    border-radius: 10px;
+    background: #151515;
+    margin-top: 101px;
+    padding: 20px 0% 20px;
+    margin-right: 1px;
 }
 
 }
