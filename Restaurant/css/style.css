@@ -54,7 +54,7 @@ font-family: 'Cedarville Cursive', cursive; */
 
 .home-content{
   /* position: absolute; */
-  padding-top: 350px;
+  padding-top: 330px;
   /* -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); */
@@ -70,7 +70,7 @@ font-family: 'Cedarville Cursive', cursive; */
   background-color:transparent !important;
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); 
   z-index: 99;
-  padding-top: 30px;
+  padding-top: 20px;
   margin-right: 3px;
  background-color:black; 
 }
@@ -81,7 +81,9 @@ font-family: 'Cedarville Cursive', cursive; */
 
 }
 
-
+/* .black{
+  color: #000;
+} */
 
 .brand {
   display: inline-block;
@@ -89,7 +91,7 @@ font-family: 'Cedarville Cursive', cursive; */
   padding-bottom: .3125rem; */
   /* margin-right: 2rem; */
   /* margin-left: 2rem; */
-  font-size: 3.00rem;
+  font-size: 2.3rem;
   /* line-height: inherit; */
   white-space: nowrap;
   font-family: 'Dancing Script', cursive;
@@ -131,7 +133,7 @@ a {
 	transition:0.2s color;
 }
 .black{
-  color: grey;
+  color: black;
 }
 
 
@@ -422,7 +424,7 @@ margin-bottom: 20px;
 
 #reservation{
   background-image: url('./img/background03.jpg');
-  padding: 70px;
+  padding: 10px;
 }
 
 
@@ -549,9 +551,9 @@ padding: 10px;
 border-radius: 20px;
 }
 
-.reserve-form .input {
+/* .reserve-form .input {
 border-color: rgba(255, 255, 255, 0.2);
-}
+} */
 
 .main-button {
 display:inline-block;
@@ -808,7 +810,13 @@ margin-right: 10px;
 	/* --- home --- */
 	.home-content h1 {
 		font-size:62px;
-	}
+  }
+  
+
+  .reserve-form  .form-group {
+    margin-bottom:10px;
+    }
+    
 
   /* --- contact --- */
   .opening-time {
@@ -816,7 +824,7 @@ margin-right: 10px;
     background: #151515;
     margin-top: 101px;
     padding: 34px 10px 34px 10px;;
-    margin-right: -66px;
+    /* margin-right: -35px; */
 }
 
 
@@ -825,7 +833,7 @@ margin-right: 10px;
 }
 
 	#contact.section {
-    padding-bottom:0px;
+    padding-bottom:15px;
   
 	}
 
@@ -878,7 +886,12 @@ margin-right: 10px;
 
 
 @media only screen and (max-width: 767px) {
-	
+  
+  .home-content h1 {
+    font-size: 60px;
+}
+
+
 }
 
 
@@ -888,11 +901,26 @@ margin-right: 10px;
 @media only screen and (max-width: 360px){
 
 
+  .brand {
+    display: inline-block;
+    /* margin-right: 2rem; */
+    /* margin-left: 1.6rem; */
+    font-size: 1.85rem;
+    /* line-height: inherit; */
+    white-space: nowrap;
+    font-family: 'Dancing Script', cursive;
+    color: darkkhaki;
+}
+
+
+
 .lead{
   display: none;
 }
 
 
+.home-content {
+  padding-top: 150px;
 
 }
 
@@ -900,19 +928,7 @@ margin-right: 10px;
 
  @media only screen and (max-width: 480px) {
 
-  .brand {
-    display: inline-block;
-    /* margin-right: 2rem; */
-    margin-left: 2rem;
-    font-size: 2.30rem;
-    /* line-height: inherit; */
-    white-space: nowrap;
-    font-family: 'Dancing Script', cursive;
-    color: darkkhaki;
-}
 
-.home-content {
-  padding-top: 150px;
 
 }
 
