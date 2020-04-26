@@ -180,7 +180,7 @@ margin-bottom: 0;
 }
 
 .title {
-  font-size: 61px;
+  font-size: 49px;
   padding-bottom: 20px;
   color: black;
 }
@@ -204,12 +204,6 @@ margin-bottom: 0;
 /* #todaysmenu{
   color: white;
   font-family: 'Dancing Script', cursive;
-<<<<<<< HEAD
-}
-=======
-  font-size: 61px;
-} */
->>>>>>> 52a72f8533df6488213b4de6d03d1e0dbb1a7d10
 
  #section{
   background-color: whitesmoke;
@@ -497,12 +491,13 @@ border-color: rgba(255, 255, 255, 0.2);
 }
 
 .opening-time {
-  padding: 40px 0% 40px;
+  padding: 20px 0% 20px;
   padding-left: 0;
   background: #151515;
   margin-top: 60px;
   margin-left: 0;
   border-radius: 10px;
+  margin-right: 107px;
 }
 
 .opening-time ul li .day {
