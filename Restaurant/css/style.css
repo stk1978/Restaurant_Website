@@ -113,7 +113,7 @@ h1 {
 }
 
 h2 {
-	font-size:36px;
+	font-size:40px;
 }
 
 h3 {
@@ -188,6 +188,7 @@ margin-bottom: 0;
 
 #todaysmenu{
   color: white;
+  font-family: 'Dancing Script', cursive;
 }
 
 #about{
@@ -378,6 +379,7 @@ margin-bottom: 20px;
   
   #todayMenu{
     color: white;
+    font-family: 'Dancing Script', cursive;
   }
    .menubody {
     margin: 0;
@@ -443,10 +445,10 @@ margin-bottom: 20px;
   padding-right: 5px;
   padding-left: 5px;
 }
-
+/* 
 h2 {
   font-size: 36px;
-}
+} */
 
 
 
@@ -511,6 +513,7 @@ font-weight:400;
 .section-header .title {
   font-family: 'Dancing Script', cursive;
   margin-top: 0px;
+  padding-bottom: 20px;
 }
 
 .sub-title{
