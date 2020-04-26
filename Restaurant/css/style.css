@@ -410,6 +410,7 @@ margin-bottom: 20px;
 
 #reservation{
   background-image: url('./img/background03.jpg');
+  padding: 70px;
 }
 
 
@@ -765,9 +766,10 @@ margin-right: 10px;
 
 #footer{
   margin-top: 50px;
-  color: white;
   background-color: black;
- width: 100%;
+  color: #7d7d7d;
+  width: 100%;
+  padding-top: 8px;
 }
 
 
