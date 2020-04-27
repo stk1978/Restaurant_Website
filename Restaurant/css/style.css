@@ -824,7 +824,7 @@ margin-right: 10px;
     background: #151515;
     margin-top: 101px;
     padding: 34px 10px 34px 10px;;
-    /* margin-right: -35px; */
+    margin-right: -8px;
 }
 
 
@@ -920,16 +920,19 @@ margin-right: 10px;
 
 
 .home-content {
-  padding-top: 150px;
+  padding-top: 96px;
+
+}
 
 }
 
 
-
  @media only screen and (max-width: 480px) {
 
-
-
+  .home-content {
+    padding-top: 132px;
+    left: 0;
+    right: 0;
 }
 
 
