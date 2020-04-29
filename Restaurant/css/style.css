@@ -70,7 +70,6 @@ font-family: 'Cedarville Cursive', cursive; */
   background-color:transparent !important;
   background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)); 
   z-index: 99;
-  padding-top: 20px;
   margin-right: 3px;
  background-color:black; 
 }
@@ -295,8 +294,8 @@ margin-bottom: 20px;
   }
  
   #Gallery.owl-theme .owl-nav [class*='owl-']:hover {
-    background-color:#f36700;
-    border-color:#f36700;
+    background-color:darkkhaki;
+    border-color:darkkhaki;
     color:#FFF;
   }
   
